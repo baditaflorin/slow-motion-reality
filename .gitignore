@@ -1,0 +1,36 @@
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Go / Python coverage and caches
+bin/
+coverage/
+.coverage
+__pycache__/
+*.pyc
+
+# Build scratch
+dist/
+dist-data/
+tmp/
+*.log
+playwright-report/
+test-results/
+
+# Keep docs/ tracked: it is the GitHub Pages publish directory.

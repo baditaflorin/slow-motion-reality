@@ -1,0 +1,4 @@
+title = "slow-motion-reality gitleaks config"
+
+[extend]
+useDefault = true

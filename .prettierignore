@@ -1,0 +1,10 @@
+node_modules/
+docs/assets/
+docs/sw.js
+docs/workbox-*.js
+docs/registerSW.js
+docs/manifest.webmanifest
+docs/index.html
+docs/404.html
+playwright-report/
+test-results/
