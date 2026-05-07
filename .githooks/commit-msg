@@ -1,0 +1,15 @@
+#!/usr/bin/env sh
+set -eu
+
+msg_file="$1"
+first_line="$(sed -n '1p' "$msg_file")"
+
+case "$first_line" in
+  feat:\ *|fix:\ *|docs:\ *|chore:\ *|refactor:\ *|test:\ *|ops:\ *|data:\ *)
+    exit 0
+    ;;
+  *)
+    echo "Commit message must use Conventional Commits: feat:, fix:, docs:, chore:, refactor:, test:, ops:, or data:" >&2
+    exit 1
+    ;;
+esac

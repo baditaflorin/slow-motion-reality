@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+set -eu
+
+make test
+make build
+make smoke
