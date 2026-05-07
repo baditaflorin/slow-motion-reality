@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/slow-motion-reality/sw.js', { scope: '/slow-motion-reality/' })})}
