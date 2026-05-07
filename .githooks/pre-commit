@@ -3,7 +3,7 @@ set -eu
 
 npm run lint
 npm run format:check
-npm run build
+make build
 
 if command -v gitleaks >/dev/null 2>&1; then
   gitleaks protect --staged --redact
